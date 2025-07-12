@@ -1,7 +1,7 @@
 # 📦 Lead Pipeline Engine
 A FastAPI-based backend integrated with a Chrome extension to streamline the process of collecting, curating, and triggering outreach to leads — primarily from LinkedIn. This project helps automate lead ingestion, formatting, and email generation based on predefined strategies and intent types (like referrals or job opening enquiries).
 
-🚀 Features
+## 🚀 Features
 ✅ Chrome extension to capture selected text (names) on LinkedIn.
 
 ✅ In-memory stack to manage and view leads before final submission.
@@ -16,7 +16,7 @@ A FastAPI-based backend integrated with a Chrome extension to streamline the pro
 
 ✅ Option to delete/edit stack items from the extension popup before sending.
 
-### Architecture 
+## Architecture 
 <img width="995" height="534" alt="image" src="https://github.com/user-attachments/assets/64facd3e-3ded-4f92-8575-783ef00f2b5e" />
 
 
