@@ -17,7 +17,8 @@ A FastAPI-based backend integrated with a Chrome extension to streamline the pro
 ✅ Option to delete/edit stack items from the extension popup before sending.
 
 ### Architecture 
-<img width="1152" height="635" alt="image" src="https://github.com/user-attachments/assets/86aeac0d-32f4-4e5b-a362-19bc60333349" />
+<img width="995" height="534" alt="image" src="https://github.com/user-attachments/assets/64facd3e-3ded-4f92-8575-783ef00f2b5e" />
+
 
 ## Installation 
 ```java 
