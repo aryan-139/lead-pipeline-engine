@@ -4,7 +4,6 @@ import re
 def process_lead(raw_item):
     # Filter for Linkedin View 
     raw_item= clean_raw_item(raw_item)
-    print(f"\n🔍 Cleaned raw item: {raw_item}")
 
     # Normalize
     raw_item = raw_item.strip()
@@ -17,8 +16,6 @@ def process_lead(raw_item):
             "error": "invalid_name_format",
             "raw_item_log": raw_item
         }
-
-    print(f"\n🔍 Processing lead: {raw_item}")
     
     # Assign based on number of tokens
     first_name = parts[0]
