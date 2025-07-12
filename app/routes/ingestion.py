@@ -3,6 +3,7 @@ from app.models.schema import TriggerRequest
 from app.core.constants import IntentEnum
 from app.services.tokenizer import process_lead
 from app.services.emailer import create_email
+from app.services.process_email import process_email
 
 router = APIRouter()
 
@@ -17,9 +18,10 @@ async def trigger_action(req: TriggerRequest):
                 # create email
                 email= create_email(chunk, req.company_name, req.custom_address, req.email_format)
                 all_valid_emails.append(email)
-                print(f"\n{i}. {raw_item} -> {email}")
             
-            
+            # process email 
+            processed_email_statistic= process_email(all_valid_emails, chunk, req.company_name)
+            print(f"\nProcessed Emails: {processed_email_statistic}")
             return {
                 "status": "success",
                 "intent": req.intent,
