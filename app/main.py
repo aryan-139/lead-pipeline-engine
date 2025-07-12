@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.routes import trigger
+from app.routes import ingestion
 
 app = FastAPI()
 
@@ -19,4 +19,4 @@ def read_root():
     return {"message": "FastAPI Text Stack Server is running."}
 
 # Register routes
-app.include_router(trigger.router)
+app.include_router(ingestion.router)
