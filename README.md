@@ -28,6 +28,8 @@ pip install fastapi uvicorn pydantic
 ```
 python run.py
 ```
+## Link to Chrome Extension 
+https://github.com/aryan-139/leadscale
 
 ### Pending Implementations 
 - Implement the retry worker 
